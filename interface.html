@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PorkPro Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: red;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+    }
+
+    nav a:hover {
+      background-color: #666;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product {
+      width: 250px;
+      margin: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .product h2 {
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to PorkPro online ordering platform</h1>
+  </header>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+  
+  <div class="content">
+    <h1>Order your favorite Pork Products here</h1>
+    <form action="order.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <label for="product">Product:</label>
+      <select id="product" name="product" required>
+        <option value="pork_loin">Pork Loin</option>
+        <option value="pork_chops">Pork Chops</option>
+        <option value="bacon">Bacon</option>
+        <option value="sausages">Sausages</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+
+      <input type="submit" value="Place Order">
+    </form>
+    
+    <h1>Our Products</h1>
+    <div class="products">
+      <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.UPyP-H6bZsWS8fBDuQFn9AHaE8?rs=1&pid=ImgDetMain" alt="Pork Loin">
+        <h2>Pork Loin</h2>
+      </div>
+      <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.CA6QPaNuuOYATMcbW2du0gHaEu?rs=1&pid=ImgDetMain" alt="Pork Chops">
+        <h2>Pork Chops</h2>
+      </div>
+      <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.878h5aQAtVDgAfuRI2Ja0gHaHE?rs=1&pid=ImgDetMain" alt="Bacon">
+        "
+        <h2>Bacon</h2>
+      </div>
+      <div class="product">
+        <img src="https://th.bing.com/th/id/R.84c172b7604dbff16688745dd3faebb0?rik=GNSIJUJAIxMaEw&riu=http%3a%2f%2fbutchers-sundries.com%2fcdn%2fshop%2fproducts%2fButchers-Classic-Tomato-Sausage-Mix_HS05959_Butchers-Sundries_Image1_1024x.png%3fv%3d1644600956&ehk=j%2fy%2bcpntn7XHbD2t2TSMvc3paVfjDzPH8iyi5rWcjBY%3d&risl=&pid=ImgRaw&r=0" alt="Sausages">
+        <h2>Sausages</h2>
+      </div>
+      <div class="product">
+      	<img src="https://petkeen.com/wp-content/uploads/2021/12/pig-on-the-grass_acceptphoto-Shutterstock-350x233.jpg" alt="Full piggy">
+	<h2>Grown stock</h2>
+      </div>	
+    </div>
+  </div>
+  
+  <footer>
+    &copy; 2024 BeketCorp@PorkPro. All rights reserved.
+  </footer>
+</body>
+</html>
